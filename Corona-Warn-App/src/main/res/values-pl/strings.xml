@@ -12,6 +12,8 @@
     <!-- NOTR -->
     <string name="preference_onboarding_completed_timestamp"><xliff:g id="preference">"preference_onboarding_completed_timestamp"</xliff:g></string>
     <!-- NOTR -->
+    <string name="preference_background_check_done"><xliff:g id="preference">"preference_background_check_done"</xliff:g></string>
+    <!-- NOTR -->
     <string name="preference_reset_app"><xliff:g id="preference">"preference_reset_app"</xliff:g></string>
     <!-- NOTR -->
     <string name="preference_only_wifi"><xliff:g id="preference">"preference_only_wifi"</xliff:g></string>
@@ -135,12 +137,21 @@
     <string name="risk_card_body_contact">"Brak narażenia do tej pory"</string>
     <!-- XTXT: risk card - number of contacts for one or more -->
     <plurals name="risk_card_body_contact_value">
+        <item quantity="one">"%1$s narażenie z niskim ryzykiem"</item>
+        <item quantity="other">"%1$s narażenia z niskim ryzykiem"</item>
+        <item quantity="zero">"Brak narażenia z niskim ryzykiem do tej pory"</item>
+        <item quantity="two">"%1$s narażenia z niskim ryzykiem"</item>
+        <item quantity="few">"%1$s narażenia z niskim ryzykiem"</item>
+        <item quantity="many">"%1$s narażeń z niskim ryzykiem"</item>
+    </plurals>
+    <!-- XTXT: risk card - number of contacts for one or more -->
+    <plurals name="risk_card_body_contact_value_high_risk">
         <item quantity="one">"%1$s narażenie"</item>
         <item quantity="other">"%1$s narażenia"</item>
-        <item quantity="zero">"%1$s narażeń"</item>
-        <item quantity="two">"%1$s narażenia"</item>
-        <item quantity="few">"%1$s narażenia"</item>
-        <item quantity="many">"%1$s narażeń"</item>
+        <item quantity="zero">"Brak narażenia do tej pory"</item>
+        <item quantity="two">"%1$s narażenia/narażeń"</item>
+        <item quantity="few">"%1$s narażenia/narażeń"</item>
+        <item quantity="many">"%1$s narażenia/narażeń"</item>
     </plurals>
     <!-- XTXT: risk card - tracing active for x out of 14 days -->
     <string name="risk_card_body_saved_days">"Rejestrowanie narażenia było aktywne przez %1$s z ostatnich 14 dni."</string>
@@ -152,6 +163,8 @@
     <string name="risk_card_body_time_fetched">"Zaktualizowano: %1$s"</string>
     <!-- XTXT: risk card - next update -->
     <string name="risk_card_body_next_update">"Aktualizowane codziennie"</string>
+    <!-- XTXT: risk card - hint to open the app daily -->
+    <string name="risk_card_body_open_daily">"Uwaga: Proszę codziennie otwierać aplikację, aby zaktualizować swój status ryzyka."</string>
     <!-- XBUT: risk card - update risk -->
     <string name="risk_card_button_update">"Aktualizuj"</string>
     <!-- XBUT: risk card - update risk with time display -->
@@ -167,7 +180,7 @@
     <!-- XTXT: risk card - increased risk days since last contact -->
     <plurals name="risk_card_increased_risk_body_contact_last">
         <item quantity="one">"%1$s dzień od ostatniego kontaktu"</item>
-        <item quantity="other">"%1$s dnia od ostatniego kontaktu"</item>
+        <item quantity="other">"%1$s dni od ostatniego kontaktu"</item>
         <item quantity="zero">"%1$s dni od ostatniego kontaktu"</item>
         <item quantity="two">"%1$s dni od ostatniego kontaktu"</item>
         <item quantity="few">"%1$s dni od ostatniego kontaktu"</item>
@@ -212,7 +225,7 @@
     <!-- XHED: Share app link page title -->
     <string name="main_share_title">"Udostępnij Corona-Warn-App"</string>
     <!-- XHED: Share app link page subtitle -->
-    <string name="main_share_headline">"Pokonajmy koronawirusa razem"</string>
+    <string name="main_share_headline">"Razem pokonajmy koronawirusa"</string>
     <!-- YTXT: Share app link page body -->
     <string name="main_share_body">"Im więcej osób będzie korzystać z aplikacji, tym szybciej będziemy mogli przerwać łańcuch zakażeń. Zachęć rodzinę i znajomych do pobrania aplikacji."</string>
     <!-- XBUT: Share app link page button -->
@@ -283,6 +296,12 @@
 
     <!-- XHED: risk details - page title, in toolbar -->
     <string name="risk_details_title">"Twój status ryzyka"</string>
+    <!-- XHED: risk details - headline for additional info in case of encounter with low risk -->
+    <string name="risk_details_additional_info_title">"Narażenia z niskim ryzykiem"</string>
+    <!-- XHED: risk details - subtitle for additional info in case of encounter with low risk -->
+    <string name="risk_details_additional_info_subtitle">"Dlaczego Twoje ryzyko zakażenia jest niskie"</string>
+    <!-- XHED: risk details - text for additional info in case of encounter with low risk -->
+    <string name="risk_details_additional_info_text">"Byłeś(-aś) narażony(-a) na kontakt z osobą, u której zdiagnozowano COVID-19. Jednak na podstawie Twoich danych rejestracji narażenia Twoje ryzyko zakażenia jest niskie. Ryzyko jest niskie, jeśli Twój kontakt trwał krótko lub zachowany został dystans. Nie musisz się martwić i podejmować żadnych działań. Zalecamy przestrzeganie obowiązujących reguł dotyczących dystansu i higieny."</string>
     <!-- XHED: risk details - headline, how a user should act -->
     <string name="risk_details_headline_behavior">"Wytyczne"</string>
     <!-- XHED: risk details - multiline headline, bold, how to act correct -->
@@ -292,7 +311,7 @@
     <!-- XMSG: risk details - get in touch with the corresponding people, something like a bullet point -->
     <string name="risk_details_behavior_body_contact_doctor">"W przypadku pytań dotyczących objawów, możliwości wykonania testu lub samoizolacji skontaktuj się z jednym z poniższych miejsc:"</string>
     <!-- XMSG: risk details - wash your hands, something like a bullet point -->
-    <string name="risk_details_behavior_body_wash_hands">"Regularnie myj ręce."</string>
+    <string name="risk_details_behavior_body_wash_hands">"Regularnie myj ręce mydłem przez 20 sekund."</string>
     <!-- XMSG: risk details - wear a face mask, something like a bullet point -->
     <string name="risk_details_behavior_body_wear_mask">"Załóż maseczkę na twarz, mając kontakt z innymi osobami."</string>
     <!-- XMSG: risk details - stay 1,5 away, something like a bullet point -->
@@ -314,7 +333,7 @@
     <!-- XHED: risk details - infection period logged information body, below behaviors -->
     <string name="risk_details_information_body_period_logged">"Ryzyko zakażenia można obliczyć tylko dla okresów, w których rejestrowanie narażenia było aktywne. Dlatego też funkcja rejestrowania powinna być stale aktywna."</string>
     <!-- XHED: risk details - infection period logged information body, below behaviors -->
-    <string name="risk_details_information_body_period_logged_assessment">"Rejestrowanie narażenia obejmuje ostatnie 14 dni. W tym czasie funkcja rejestrowania w Twoim urządzeniu była aktywna przez %1$s dni. Aplikacja automatycznie usuwa starsze rejestry, ponieważ nie są one już istotne dla zapobiegania zakażeniom."</string>
+    <string name="risk_details_information_body_period_logged_assessment">"Rejestrowanie narażenia obejmuje ostatnie 14 dni. W tym czasie funkcja rejestrowania w Twoim urządzeniu była aktywna przez %1$s dni. Aplikacja automatycznie usuwa starsze dzienniki, ponieważ nie są one już istotne dla zapobiegania zakażeniom."</string>
     <!-- XHED: risk details - how your risk level was calculated, below behaviors -->
     <string name="risk_details_subtitle_infection_risk_past">"Sposób, w jaki obliczono Twoje ryzyko"</string>
     <!-- XHED: risk details - how your risk level will be calculated, below behaviors -->
@@ -325,17 +344,23 @@
     <string name="risk_details_information_body_outdated_risk">"Rejestrowanie narażenia nie mogło zostać zaktualizowane przez okres dłuższy niż 24 godziny."</string>
     <!-- YTXT: risk details - low risk explanation text -->
     <string name="risk_details_information_body_low_risk">"Masz niskie ryzyko zakażenia, ponieważ nie zarejestrowano narażenia na kontakt z osobami, u których później zdiagnozowano COVID-19, lub ponieważ Twoje kontakty trwały krótko przy zachowaniu odpowiednio dużej odległości."</string>
+    <!-- YTXT: risk details - low risk explanation text with encounter with low risk -->
+    <string name="risk_details_information_body_low_risk_with_encounter">"Ryzyko zakażenia jest obliczane lokalnie na Twoim urządzeniu na podstawie danych rejestrowania narażenia. Ta kalkulacja uwzględnia również dystans i czas trwania narażenia na kontakt z osobami, u których zdiagnozowano COVID-19, a także potencjalną podatność na zarażenie. Twoje ryzyko zakażenia nie jest widoczne dla nikogo ani nikomu przekazywane."</string>
     <!-- YTXT: risk details - increased risk explanation text with variable for day(s) since last contact -->
     <plurals name="risk_details_information_body_increased_risk">
-        <item quantity="one">"Masz podwyższone ryzyko zakażenia, ponieważ %1$s dzień temu byłeś(-aś) narażony na dłuższy, bliski kontakt z co najmniej jedną osobą, u której zdiagnozowano COVID-19."</item>
-        <item quantity="other">"Masz podwyższone ryzyko zakażenia, ponieważ %1$s dnia temu byłeś(-aś) narażony na dłuższy, bliski kontakt z co najmniej jedną osobą, u której zdiagnozowano COVID-19."</item>
-        <item quantity="zero">"Masz podwyższone ryzyko zakażenia, ponieważ %1$s dni temu byłeś(-aś) narażony na dłuższy, bliski kontakt z co najmniej jedną osobą, u której zdiagnozowano COVID-19."</item>
-        <item quantity="two">"Masz podwyższone ryzyko zakażenia, ponieważ %1$s dni temu byłeś(-aś) narażony na dłuższy, bliski kontakt z co najmniej jedną osobą, u której zdiagnozowano COVID-19."</item>
-        <item quantity="few">"Masz podwyższone ryzyko zakażenia, ponieważ %1$s dni temu byłeś(-aś) narażony na dłuższy, bliski kontakt z co najmniej jedną osobą, u której zdiagnozowano COVID-19."</item>
-        <item quantity="many">"Masz podwyższone ryzyko zakażenia, ponieważ %1$s dni temu byłeś(-aś) narażony na dłuższy, bliski kontakt z co najmniej jedną osobą, u której zdiagnozowano COVID-19."</item>
+        <item quantity="one">"Masz podwyższone ryzyko zakażenia, ponieważ %1$s dni temu byłeś(-aś) narażony(-a) na dłuższy, bliski kontakt z co najmniej jedną osobą, u której zdiagnozowano COVID-19."</item>
+        <item quantity="other">"Masz podwyższone ryzyko zakażenia, ponieważ %1$s dni temu byłeś(-aś) narażony(-a) na dłuższy, bliski kontakt z co najmniej jedną osobą, u której zdiagnozowano COVID-19."</item>
+        <item quantity="zero">"Masz podwyższone ryzyko zakażenia, ponieważ %1$s dni temu byłeś(-aś) narażony(-a) na dłuższy, bliski kontakt z co najmniej jedną osobą, u której zdiagnozowano COVID-19."</item>
+        <item quantity="two">"Masz podwyższone ryzyko zakażenia, ponieważ %1$s dni temu byłeś(-aś) narażony(-a) na dłuższy, bliski kontakt z co najmniej jedną osobą, u której zdiagnozowano COVID-19."</item>
+        <item quantity="few">"Masz podwyższone ryzyko zakażenia, ponieważ %1$s dni temu byłeś(-aś) narażony(-a) na dłuższy, bliski kontakt z co najmniej jedną osobą, u której zdiagnozowano COVID-19."</item>
+        <item quantity="many">"Masz podwyższone ryzyko zakażenia, ponieważ %1$s dni temu byłeś(-aś) narażony(-a) na dłuższy, bliski kontakt z co najmniej jedną osobą, u której zdiagnozowano COVID-19."</item>
     </plurals>
     <!-- YTXT: risk details - risk calculation explanation -->
     <string name="risk_details_information_body_notice">"Ryzyko zakażenia jest obliczane na podstawie danych rejestrowania narażenia (czas trwania i bliskość kontaktu) lokalnie w urządzeniu. Twoje ryzyko zakażenia nie jest widoczne dla nikogo ani nikomu przekazywane."</string>
+    <!-- YTXT: risk details - risk calculation explanation for low risk -->
+    <string name="risk_details_information_body_notice_low">"Dlatego Twoje ryzyko zakażenia zostało ocenione jako niskie. Ryzyko zakażenia jest obliczane na podstawie danych rejestrowania narażenia (czas trwania i bliskość kontaktu) lokalnie w urządzeniu. Twoje ryzyko zakażenia nie jest widoczne dla nikogo ani nikomu przekazywane."</string>
+    <!-- YTXT: risk details - risk calculation explanation for increased risk -->
+    <string name="risk_details_information_body_notice_increased">"Dlatego Twoje ryzyko zakażenia zostało ocenione jako podwyższone. Ryzyko zakażenia jest obliczane na podstawie danych rejestrowania narażenia (czas trwania i bliskość kontaktu) lokalnie w urządzeniu. Twoje ryzyko zakażenia nie jest widoczne dla nikogo ani nikomu przekazywane. Po powrocie do domu unikaj również bliskiego kontaktu z członkami rodziny lub gospodarstwa domowego."</string>
     <!-- NOTR -->
     <string name="risk_details_button_update">@string/risk_card_button_update</string>
     <!-- NOTR -->
@@ -367,7 +392,7 @@
     <!-- XACT: Onboarding (together) page title -->
     <string name="onboarding_onboarding_accessibility_title">"Strona wprowadzenia 1 z 5: Wspólna walka z koronawirusem"</string>
     <!-- XHED: onboarding(together) - fight corona -->
-    <string name="onboarding_headline">"Pokonajmy koronawirusa razem"</string>
+    <string name="onboarding_headline">"Razem pokonajmy koronawirusa"</string>
     <!-- XHED: onboarding(together) - two/three line headline under an illustration -->
     <string name="onboarding_subtitle">"Większa ochrona dla Ciebie i dla nas wszystkich. Korzystając z aplikacji Corona-Warn-App, możemy znacznie szybciej przerwać łańcuchy zakażeń."</string>
     <!-- YTXT: onboarding(together) - inform about the app -->
@@ -393,6 +418,8 @@
     <string name="onboarding_tracing_body">"Działanie funkcji rejestrowania narażenia polega na odbieraniu przez Twoje urządzenie za pomocą Bluetooth zaszyfrowanych, losowych identyfikatorów innych użytkowników i przekazywaniu Twoich własnych, losowych identyfikatorów do ich urządzeń. Funkcję tę można wyłączyć w dowolnym momencie."</string>
     <!-- YTXT: onboarding(tracing) - explain tracing -->
     <string name="onboarding_tracing_body_emphasized">"Zaszyfrowane losowe identyfikatory przekazują innym osobom jedynie informacje o dacie, czasie trwania i bliskości (przy wykorzystaniu mocy sygnału). Dane osobowe, takie jak nazwisko, adres, lokalizacja, nie są nigdy rejestrowane. Ustalenie tożsamości osób nie jest możliwe."</string>
+    <!-- YTXT: onboarding(tracing) - easy language explain tracing link-->
+    <string name="onboarding_tracing_easy_language_explanation"><a href="https://www.bundesregierung.de/breg-de/themen/corona-warn-app/corona-warn-app-leichte-sprache-gebaerdensprache">"Informacja o aplikacji w języku uproszczonym i języku migowym"</a></string>
     <!-- XHED: onboarding(tracing) - headline for consent information -->
     <string name="onboarding_tracing_headline_consent">"Oświadczenia o wyrażeniu zgody"</string>
     <!-- YTXT: onboarding(tracing) - body for consent information -->
@@ -415,6 +442,20 @@
     <string name="onboarding_background_fetch_dialog_button_positive">"Otwórz ustawienia urządzenia"</string>
     <!-- XBUT: onboarding(tracing) - dialog about background jobs, continue in app -->
     <string name="onboarding_background_fetch_dialog_button_negative">"Uruchom rejestrowanie narażenia ręcznie"</string>
+    <!-- XACT: onboarding(tracing) - dialog about energy optimized header text -->
+    <string name="onboarding_energy_optimized_dialog_headline">"Zezwól na priorytetowe działanie w tle"</string>
+    <!-- YMSI: onboarding(tracing) - dialog about energy optimized -->
+    <string name="onboarding_energy_optimized_dialog_body">"Włącz priorytetowe działanie w tle, aby aplikacja mogła w dowolnym momencie ustalić Twój status ryzyka w tle (zalecane). Powoduje to wyłączenie optymalizacji żywotności baterii tylko dla aplikacji Corona-Warn-App. Nie przewidujemy w takim przypadku znacznego spadku żywotności baterii urządzenia.\n\nJeśli nie chcesz zezwolić na to ustawienie, zalecamy otwieranie aplikacji ręcznie co najmniej raz na dobę."</string>
+    <!-- XBUT: onboarding(tracing) - dialog about energy optimized, open device settings -->
+    <string name="onboarding_energy_optimized_dialog_button_positive">"Zezwól"</string>
+    <!-- XBUT: onboarding(tracing) - dialog about energy optimized, continue in app -->
+    <string name="onboarding_energy_optimized_dialog_button_negative">"Nie zezwalaj"</string>
+    <!-- XACT: onboarding(tracing) - dialog about manual checking header text -->
+    <string name="onboarding_manual_required_dialog_headline">"Priorytetowe działanie w tle zostało wyłączone"</string>
+    <!-- YMSI: onboarding(tracing) - dialog about manual checking -->
+    <string name="onboarding_manual_required_dialog_body">"Pamiętaj, że w przypadku wyłączenia priorytetowego działania w tle konieczne jest otwieranie aplikacji co najmniej raz na dobę w celu aktualizacji statusu ryzyka.\n\nPriorytetowe działanie w tle można wyłączyć w ustawieniach w dowolnym momencie."</string>
+    <!-- XBUT: onboarding(tracing) - dialog about manual checking button -->
+    <string name="onboarding_manual_required_dialog_button">"OK"</string>
     <!-- XACT: onboarding(tracing) - illustraction description, header image -->
     <string name="onboarding_tracing_illustration_description">"Trzy osoby aktywowały rejestrowanie narażenia na swoich urządzeniach, które będą rejestrować ich wzajemne kontakty."</string>
     <!-- XHED: onboarding(tracing) - location explanation for bluetooth headline -->
@@ -465,9 +506,9 @@
     <!-- XTXT: settings(tracing) - shows status under header in home, inactive -->
     <string name="settings_tracing_body_inactive">"Rejestrowanie narażenia zatrzymane"</string>
     <!-- XTXT: settings(tracing) - shows status under header in home, inactive location -->
-    <string name="settings_tracing_body_inactive_location">"Usługa lokalizacji dezaktywowana"</string>
+    <string name="settings_tracing_body_inactive_location">"Usługi lokalizacji dezaktywowane"</string>
     <!-- YTXT: settings(tracing) - explains tracings -->
-    <string name="settings_tracing_body_text">"Działanie funkcji rejestrowania narażenia polega na odbieraniu przez Twoje urządzenie za pomocą Bluetooth zaszyfrowanych, losowych identyfikatorów innych użytkowników i przekazywaniu Twoich losowych identyfikatorów do ich urządzeń. Funkcję tę można wyłączyć w dowolnym momencie. "<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"Zaszyfrowane losowe identyfikatory przekazują innym osobom jedynie informacje o dacie, czasie trwania i bliskości (przy wykorzystaniu mocy sygnału). Dane osobowe, takie jak nazwisko, adres, lokalizacja, nie są nigdy rejestrowane. Ustalenie tożsamości osób nie jest możliwe."</string>
+    <string name="settings_tracing_body_text">"Działanie funkcji rejestrowania narażenia polega na odbieraniu przez Twoje urządzenie za pomocą Bluetooth zaszyfrowanych, losowych identyfikatorów innych użytkowników i przekazywaniu Twoich losowych identyfikatorów do ich urządzeń. Funkcję tę można wyłączyć w dowolnym momencie. "<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"Identyfikatory przekazują w sposób zaszyfrowany wyłącznie informacje o dacie, czasie trwania i odległości (przy wykorzystaniu mocy sygnału) od innych użytkowników aplikacji. Dane osobowe, takie jak nazwisko, adres, lokalizacja, nie są nigdy rejestrowane. Ustalenie tożsamości osób nie jest możliwe."</string>
     <!-- XTXT: settings(tracing) - status next to switch under title -->
     <string name="settings_tracing_status_active">"Aktywne"</string>
     <!-- XTXT: settings(tracing) - status next to switch under title -->
@@ -499,7 +540,7 @@
     <!-- XTXT: settings(tracing) - explains the circle progress indicator to the right with the current value -->
     <plurals name="settings_tracing_status_body_active">
         <item quantity="one">"Rejestrowanie narażenia jest aktywne od jednego dnia.\nSprawdzanie narażeń jest wiarygodne tylko wtedy, gdy rejestrowanie narażenia jest aktywowane na stałe."</item>
-        <item quantity="other">"Rejestrowanie narażenia jest aktywne od %1$s dnia.\nSprawdzanie narażeń jest wiarygodne tylko wtedy, gdy rejestracja narażenia jest aktywowana na stałe."</item>
+        <item quantity="other">"Rejestrowanie narażenia jest aktywne od %1$s dni.\nSprawdzanie narażeń jest wiarygodne tylko wtedy, gdy rejestracja narażenia jest aktywowana na stałe."</item>
         <item quantity="zero">"Rejestrowanie narażenia jest aktywne od %1$s dni.\nSprawdzanie narażeń jest wiarygodne tylko wtedy, gdy rejestrowanie narażenia jest aktywowane na stałe."</item>
         <item quantity="two">"Rejestrowanie narażenia jest aktywne od %1$s dni.\nSprawdzanie narażeń jest wiarygodne tylko wtedy, gdy rejestracja narażenia jest aktywowana na stałe."</item>
         <item quantity="few">"Rejestrowanie narażenia jest aktywne od %1$s dni.\nSprawdzanie narażeń jest wiarygodne tylko wtedy, gdy rejestracja narażenia jest aktywowana na stałe."</item>
@@ -508,7 +549,7 @@
     <!-- XACT: settings(tracing) - describes illustration -->
     <string name="settings_tracing_illustration_description_active">"Trzy osoby aktywowały rejestrowanie narażenia na swoich urządzeniach, które będą rejestrować ich wzajemne kontakty."</string>
     <!-- XACT: settings(tracing) - describes illustration -->
-    <string name="settings_tracing_illustration_description_inactive">"Jedna osoba dezaktywowała logowanie narażenia na swoim smartfonie, więc kontakt z dwiema pozostałymi osobami nie jest rejestrowany."</string>
+    <string name="settings_tracing_illustration_description_inactive">"Jedna osoba dezaktywowała rejestrowanie narażenia na swoim smartfonie, więc kontakt z dwiema pozostałymi osobami nie jest rejestrowany."</string>
     <!-- XACT: settings(tracing) - describes illustration -->
     <string name="settings_tracing_bluetooth_illustration_description_inactive">"Jedna osoba wyłączyła Bluetooth na swoim smartfonie, więc kontakt z dwiema pozostałymi osobami nie jest rejestrowany."</string>
     <!-- XACT: settings(tracing) - describes illustration -->
@@ -596,7 +637,7 @@
     <!-- XHED: Page title for about information page, also menu item / button text -->
     <string name="information_about_title">"O aplikacji"</string>
     <!-- XHED: Subtitle for about information page -->
-    <string name="information_about_headline">"Pokonajmy koronawirusa razem"</string>
+    <string name="information_about_headline">"Razem pokonajmy koronawirusa"</string>
     <!-- YTXT: Body text for about information page -->
     <string name="information_about_body_emphasized">"Instytut Roberta Kocha (RKI) to niemiecka federalna instytucja zdrowia publicznego. RKI publikuje aplikację Corona-Warn-App w imieniu rządu federalnego. Aplikacja ta służy jako cyfrowe uzupełnienie już wprowadzonych środków ochrony zdrowia publicznego, takich jak zachowanie dystansu społecznego, dbanie o higienę oraz noszenie maseczek."</string>
     <!-- YTXT: Body text for about information page -->
@@ -658,7 +699,11 @@
     <!-- XHED: Headline for legal information page, contact section -->
     <string name="information_legal_headline_contact">"Kontakt"</string>
     <!-- YTXT: subtitle for legal information page, contact section -->
-    <string name="information_legal_subtitle_contact">"E-mail: CoronaWarnApp@rki.de"<xliff:g id="line_break">"\n"</xliff:g>"Telefon: +49 30 18754 5100"</string>
+    <string name="information_legal_subtitle_contact">"E-mail: CoronaWarnApp@rki.de"</string>
+    <!-- YTXT: subtitle for legal information page, open contact form -->
+    <string name="information_legal_subtitle_contact_form"><a href="https://www.rki.de/SharedDocs/Kontaktformulare/weitere/Corona-Warn-App/Corona-Warn-App_Integrator.html">"Formularz kontaktowy"</a></string>
+    <!-- NOTR: subtitle for legal information page, open contact form for languages other than English and German -->
+    <string name="information_legal_subtitle_contact_form_non_en_de">"Contact Form in "<a href="https://www.rki.de/SharedDocs/Kontaktformulare/en/Kontaktformulare/weitere/Corona-Warn-App/Corona-Warn-App_Integrator.html">"English"</a>" or "<a href="https://www.rki.de/SharedDocs/Kontaktformulare/weitere/Corona-Warn-App/Corona-Warn-App_Integrator.html">"German"</a></string>
     <!-- XHED: Headline for legal information page, tax section -->
     <string name="information_legal_headline_taxid">"Numer identyfikacyjny VAT"</string>
     <!-- YTXT: subtitle for legal information page, tax section -->
@@ -701,6 +746,13 @@
     <!-- XBUT: Positive button for submission tan invalid -->
     <string name="submission_error_dialog_web_tan_invalid_button_positive">"Wstecz"</string>
 
+    <!-- XHED: Dialog title for submission tan redeemed -->
+    <string name="submission_error_dialog_web_tan_redeemed_title">"Test zawiera błędy"</string>
+    <!-- XMSG: Dialog body for submission tan redeemed -->
+    <string name="submission_error_dialog_web_tan_redeemed_body">"Podczas ustalania wyniku testu pojawił się błąd. Twój kod QR wygasł."</string>
+    <!-- XBUT: Positive button for submission tan redeemed -->
+    <string name="submission_error_dialog_web_tan_redeemed_button_positive">"OK"</string>
+
     <!-- Permission Rationale Dialog -->
     <!-- XHED: Dialog headline QR Scan permission rationale  -->
     <string name="submission_qr_code_scan_permission_rationale_dialog_headline">"Wymagana autoryzacja aparatu"</string>
@@ -723,7 +775,7 @@
     <!-- XHED: Dialog headline for invalid QR code  -->
     <string name="submission_qr_code_scan_invalid_dialog_headline">"Niepoprawny kod QR"</string>
     <!-- YTXT: Dialog Body text for invalid QR code -->
-    <string name="submission_qr_code_scan_invalid_dialog_body">"Kod QR jest nie poprawny. Spróbuj ponownie."</string>
+    <string name="submission_qr_code_scan_invalid_dialog_body">"Kod QR jest niepoprawny lub został już zarejestrowany na innym smartfonie. Otrzymasz swój wynik testu z ośrodka wykonującego testy lub laboratorium niezależnie od ważności kodu QR. W przypadku zdiagnozowania u Ciebie COVID-19 organ ds. zdrowia publicznego zostanie powiadomiony przez ustanowiony prawnie kanał komunikacyjny i skontaktuje się z Tobą."</string>
     <!-- XBUT: Dialog(Invalid QR code) - positive button (right) -->
     <string name="submission_qr_code_scan_invalid_dialog_button_positive">"Spróbuj ponownie."</string>
     <!-- XBUT: Dialog(Invalid QR code) - negative button (left) -->
@@ -740,7 +792,7 @@
     <!-- XHED: Page subheadline for test result  -->
     <string name="submission_test_result_subtitle">"Jak to działa:"</string>
     <!-- XHED: Page headline for results next steps  -->
-    <string name="submission_test_result_steps_added_heading">"Test został dodany."</string>
+    <string name="submission_test_result_steps_added_heading">"Test został dodany"</string>
     <!-- YTXT: Body text for for results next steps  -->
     <string name="submission_test_result_steps_added_body">"Twój test został zapisany w Corona-Warn-App."</string>
     <!-- XHED: Page headline for pending test result next steps  -->
@@ -754,7 +806,7 @@
     <!-- XHED: Page headline for negative test result next steps  -->
     <string name="submission_test_result_negative_steps_negative_heading">"Twój wynik testu"</string>
     <!-- YTXT: Body text for next steps section of test negative result -->
-    <string name="submission_test_result_negative_steps_negative_body">"Wynik laboratoryjny nie potwierdza, że masz koronawirusa SARS-CoV-2.\n\nUsuń test z aplikacji Corona-Warn-App, aby w razie potrzeby móc zapisać w niej kod nowego testu."</string>
+    <string name="submission_test_result_negative_steps_negative_body">"Wynik laboratoryjny nie potwierdza zakażenia wirusem SARS-CoV-2.\n\nUsuń test z aplikacji Corona-Warn-App, aby w razie potrzeby móc zapisać w niej kod nowego testu."</string>
     <!-- XBUT: negative test result : remove the test button -->
     <string name="submission_test_result_negative_remove_test_button">"Usuń test"</string>
     <!-- XHED: Page headline for positive test result screen  -->
@@ -770,7 +822,7 @@
     <!-- XHED: Page headline for invalid test result screen  -->
     <string name="submission_test_result_invalid_steps_invalid_heading">"Twój wynik testu"</string>
     <!-- YTXT: Body text for next steps section of invalid test result-->
-    <string name="submission_test_result_invalid_steps_invalid_body">"Wystąpił problem z ustaleniem wyniku Twojego testu. Skontaktuj się z organem ds. zdrowia publicznego, aby dowiedzieć się, jak dalej postępować.\n\nUsuń test z aplikacji Corona-Warn-App, aby w razie potrzeby móc zapisać w niej kod nowego testu."</string>
+    <string name="submission_test_result_invalid_steps_invalid_body">"Wystąpił problem z ustaleniem wyniku Twojego testu. Skontaktuj się z ośrodkiem wykonującym testy lub odpowiednim laboratorium, aby dowiedzieć się, jak dalej postępować.\n\nUsuń test z aplikacji Corona-Warn-App, aby w razie potrzeby móc zapisać w niej kod nowego testu."</string>
     <!-- XBUT: invalid test result : remove the test button -->
     <string name="submission_test_result_invalid_remove_test_button">"Usuń test"</string>
     <!-- XHED: Dialog title for tracing required dailog  -->
@@ -780,9 +832,9 @@
     <!-- XBUT: tracing required : OK button -->
     <string name="submission_test_result_dialog_tracing_required_button">"OK"</string>
     <!-- XHED: Dialog title for test removal  -->
-    <string name="submission_test_result_dialog_remove_test_title">"Usunąć test?"</string>
+    <string name="submission_test_result_dialog_remove_test_title">"Test może być zeskanowany tylko raz."</string>
     <!-- YTXT: Dialog text for test removal -->
-    <string name="submission_test_result_dialog_remove_test_message">"Test zostanie trwale usunięty z Corona-Warn-App i jego ponownie dodanie nie będzie możliwe. Tej procedury nie można cofnąć."</string>
+    <string name="submission_test_result_dialog_remove_test_message">"Jeśli usuniesz test, nie będziesz mieć możliwości pobrania wyniku swojego testu. Otrzymasz swój wynik testu z ośrodka wykonującego testy lub laboratorium niezależnie od ważności kodu QR. W przypadku zdiagnozowania u Ciebie COVID-19 organ ds. zdrowia publicznego zostanie powiadomiony przez ustanowiony prawnie kanał komunikacyjny i skontaktuje się z Tobą."</string>
     <!-- XBUT: Positive button for test removal -->
     <string name="submission_test_result_dialog_remove_test_button_positive">"Usuń"</string>
     <!-- XBUT: Negative button for test removal -->
@@ -812,7 +864,7 @@
     <!-- XHED: Page headline for menu the at start of the submission process  -->
     <string name="submission_intro_headline">"Sposób działania Corona-Warn-App"</string>
     <!-- YTXT: submission introduction text -->
-    <string name="submission_intro_text">"Aby zapewnić prawidłowe działanie aplikacji, korzystamy ze wsparcia osób, u których zdiagnozowano COVID-19.\n\nPonieważ wymieniane są tylko zaszyfrowane, losowe identyfikatory, zachowujesz anonimowość. Możesz teraz postąpić w poniższy sposób:"</string>
+    <string name="submission_intro_text">"Skuteczność działania aplikacji zależy od pomocy osób, u których zdiagnozowano COVID-19.\n\nZawsze zachowujesz anonimowość, ponieważ wymienianie są tylko zaszyfrowane, losowe identyfikatory. Możesz teraz postąpić w poniższy sposób:"</string>
     <!-- XBUT: Submission introduction next button-->
     <string name="submission_intro_button_next">"Dalej"</string>
     <!-- XACT: Submission intro - illustration description, explanation image -->
@@ -860,7 +912,7 @@
     <!-- XHED: Page headline for the positive result additional warning page-->
     <string name="submission_positive_other_warning_headline">"Pomóż nam wszystkim!"</string>
     <!-- YTXT: Body text for the positive result additional warning page-->
-    <string name="submission_positive_other_warning_body">"Możesz następnie aktywować w aplikacji Corona-Warn-App udostępnianie innym Twoich losowych identyfikatorów z ostatnich 14 dni. W ten sposób ostrzeżesz inne osoby i pomożesz w przerwaniu łańcucha zakażeń.\n\nPonieważ przekazywane są tylko bezosobowe, losowe identyfikatory, zachowujesz anonimowość."</string>
+    <string name="submission_positive_other_warning_body">"Teraz możesz aktywować udostępnianie Twoich losowych identyfikatorów z ostatnich 14 dni. W ten sposób ostrzeżesz inne osoby i pomożesz w przerwaniu łańcucha zakażeń.\n\nZachowasz anonimowość, ponieważ przekazywane są tylko bezosobowe, losowe identyfikatory."</string>
     <!-- XHED: Title for the privacy card-->
     <string name="submission_positive_other_warning_privacy_title">"Prywatność danych"</string>
     <!-- YTXT: Body text for the privacy card-->
@@ -902,7 +954,7 @@
     <!-- XHED: Page headline for contact page in submission flow -->
     <string name="submission_contact_headline">"Jak to działa:"</string>
     <!-- YTXT: Body text for contact page in submission flow-->
-    <string name="submission_contact_body">"Przygotuj wynik testu (jeśli jest dostępny) oraz numer telefonu, pod którym można poprosić o numer TAN."</string>
+    <string name="submission_contact_body">"Przygotuj wynik testu (jeśli jest dostępny) oraz numer telefonu, aby poprosić o numer TAN.\n\nOsoby niedosłyszące mogą skorzystać z usług Tess Relay (tłumaczenie z pisanego języka niemieckiego na język migowy i odwrotnie) w celu skontaktowania się z infolinią. To oprogramowanie można pobrać z Google Play."</string>
     <!-- XBUT: submission contact call button -->
     <string name="submission_contact_button_call">"Zadzwoń"</string>
     <!-- XBUT: submission contact enter tan button -->
